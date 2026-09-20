@@ -1127,6 +1127,117 @@ footer {
   margin-left: 5px;
 }
 
+.testimonials-section {
+  padding: 0 0 110px;
+}
+
+.testimonials-heading {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 50px;
+  align-items: end;
+  margin-bottom: 45px;
+}
+
+.testimonials-heading h2 {
+  margin: 16px 0 0;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(38px, 4.5vw, 56px);
+  letter-spacing: -0.055em;
+  line-height: 1.04;
+}
+
+.testimonials-heading > p {
+  max-width: 450px;
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.testimonial-card {
+  display: flex;
+  min-height: 285px;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid rgba(33, 48, 35, 0.09);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.featured-testimonial {
+  color: white;
+  background: var(--ink);
+}
+
+.testimonial-stars {
+  color: #80a832;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.testimonial-card blockquote {
+  margin: 28px 0 35px;
+  color: #455047;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.62;
+}
+
+.featured-testimonial blockquote {
+  color: #eef3ee;
+}
+
+.testimonial-person {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  margin-top: auto;
+}
+
+.testimonial-avatar {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  background: #7c905f;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.testimonial-card:nth-child(2) .testimonial-avatar {
+  color: var(--ink);
+  background: var(--lime);
+}
+
+.testimonial-card:nth-child(3) .testimonial-avatar {
+  background: #788c99;
+}
+
+.testimonial-person strong,
+.testimonial-person small {
+  display: block;
+}
+
+.testimonial-person strong {
+  font-size: 11px;
+}
+
+.testimonial-person small {
+  margin-top: 2px;
+  color: #879188;
+  font-size: 8px;
+}
+
 .coaching-cta {
   display: flex;
   align-items: center;
@@ -1214,6 +1325,19 @@ footer {
 
   .method-card {
     min-height: auto;
+  }
+
+  .testimonials-heading {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    min-height: 235px;
   }
 
   .coaching-cta {
@@ -1347,6 +1471,10 @@ footer {
 
   .method-section {
     padding: 85px 0 80px;
+  }
+
+  .testimonials-section {
+    padding-bottom: 80px;
   }
 
   .coaching-cta {

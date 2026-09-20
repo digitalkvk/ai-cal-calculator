@@ -1171,6 +1171,16 @@ footer {
   background: rgba(255, 255, 255, 0.62);
 }
 
+.testimonial-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.55 / 1;
+  margin-bottom: 23px;
+  border-radius: 14px;
+  object-fit: cover;
+  object-position: center 34%;
+}
+
 .featured-testimonial {
   color: white;
   background: var(--ink);
@@ -1183,7 +1193,7 @@ footer {
 }
 
 .testimonial-card blockquote {
-  margin: 28px 0 35px;
+  margin: 23px 0 35px;
   color: #455047;
   font-family: "Manrope", sans-serif;
   font-size: 15px;
